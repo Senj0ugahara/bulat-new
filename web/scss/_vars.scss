@@ -1,0 +1,13 @@
+// colors
+:root {
+  // base
+  --content-width: 1560px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --black-color: #000;
+  --text-color: #323232;
+  --green-color: #15B359;
+}

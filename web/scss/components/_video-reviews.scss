@@ -1,0 +1,70 @@
+.video-reviews {
+  padding: 90px 0;
+  background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    position: relative;
+    width: 1290px;
+    margin: 0 auto;
+  }
+
+  &__swiper {
+    width: 1050px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slide {
+    width: 510px!important;
+  }
+
+  &__item {
+    border-radius: 20px;
+    filter: drop-shadow(6px 6px 10px rgba(1, 45, 85, 0.28));
+  }
+
+  &__image {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      height: 323px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2B2B2B;
+  }
+
+  &__desc {
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2B2B;
+  }
+
+  &__button {
+    position: absolute;
+    top: 30%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+
+    &-prev {
+      left: 0;
+    }
+
+    &-next {
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+}

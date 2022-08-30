@@ -1,0 +1,110 @@
+.hero {
+  padding: 100px 0 60px;
+  background-image: url(../images/hero/hero-bg.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  &__container {
+    position: relative;
+  }
+
+  &__left {
+    position: relative;
+    max-width: 920px;
+    padding: 100px 0 210px;
+    z-index: 10;
+  }
+
+  &__main-title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    max-width: 430px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--light-color);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    position: absolute;
+    top: -100px;
+    right: -150px;
+  }
+
+  &__video {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    z-index: 10;
+  }
+}
+
+.hero-item {
+  height: 126px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(180.07deg, #F0F5FF 0.06%, #D9E2FF 99.94%);
+  box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
+  border-radius: 20px;
+
+  &__icon {
+    margin-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__desc {
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2B2B;
+  }
+}
+
+.hero-features {
+  padding: 46px 30px 43px 61px;
+  background: linear-gradient(181.21deg, rgba(255, 255, 255, 0.15) 1.03%, rgba(255, 255, 255, 0.140625) 1.04%, rgba(255, 255, 255, 0) 98.97%);
+  border: 1px solid #484747;
+  backdrop-filter: blur(20px);
+  border-radius: 17px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__desc {
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--light-color);
+  }
+}

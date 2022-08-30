@@ -1,0 +1,25 @@
+.buy {
+  display: flex;
+  align-items: center;
+
+  &__prices {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  &__price {
+    &_old {
+      font-size: 22px;
+      line-height: 26px;
+      color: #737373;
+    }
+
+    &_new {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 32px;
+      color: var(--light-color);
+    }
+  }
+}
