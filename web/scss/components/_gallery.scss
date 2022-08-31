@@ -1,0 +1,49 @@
+.gallery {
+  padding: 90px 0;
+  background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
+
+  &__wrapper {
+    width: 1320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    a {
+      position: relative;
+      display: inline-block;
+      outline: 0;
+      width: 100%;
+      background: linear-gradient(180.07deg, #F0F5FF 0.06%, #D9E2FF 99.94%);
+      box-shadow: 0px 0px 20px rgba(4, 51, 122, 0.45);
+      border-radius: 20px;
+      overflow: hidden;
+
+      &:nth-child(2n+1) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__big {
+    width: 40%;
+    padding-right: 15px;
+
+    a {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__medium {
+    width: 30%;
+    padding-left: 15px;
+
+    &:not(:last-child) {
+      padding-right: 15px;
+    }
+  }
+}
