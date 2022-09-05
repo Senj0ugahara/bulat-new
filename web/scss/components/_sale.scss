@@ -1,0 +1,71 @@
+.sale {
+  position: relative;
+  padding: 90px 0 100px;
+  background-image: url(../images/sale/sale-bg.png);
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 10px;
+
+    .white {
+      font-weight: 400;
+      background: linear-gradient(90deg, #FFFFFF 0%, #C7C7C7 31.04%, #FFFFFF 66.67%, #C7C7C7 97.71%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .blue {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 48px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #C7C7C7 31.04%, #FFFFFF 66.67%, #C7C7C7 97.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__image {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__gifts {
+    margin-right: 70px;
+  }
+}
+
+.sale-item {
+  max-width: 435px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(180.07deg, #F0F5FF 0.06%, #D9E2FF 99.94%);
+  box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 29px;
+    color: #2B2B2B;
+  }
+}

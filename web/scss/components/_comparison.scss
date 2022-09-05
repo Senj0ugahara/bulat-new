@@ -1,0 +1,99 @@
+.comparison {
+  position: relative;
+  padding: 110px 0;
+  background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 397px;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: 0;
+    height: 914px;
+    background-image: url(../images/comparison/comparison-bg1.png);
+  }
+
+  &::after {
+    right: 0;
+    height: 930px;
+    background-image: url(../images/comparison/comparison-bg2.png);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2B2B;
+  }
+
+  &__table {
+    width: 1070px;
+    margin: 0 auto 40px;
+  }
+
+  &__btn {
+    margin: 0 auto 20px;
+  }
+
+  &__subbutton {
+    font-size: 18px;
+    line-height: 22px;
+    color: #2B2B2B;
+  }
+}
+
+.comparison-table {
+  border-collapse: collapse;
+
+  &__col {
+    padding: 30px 18px;
+    border: 2px solid #448FFF;
+  }
+
+  &__title {
+    background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  &__desc {
+    padding-left: 35px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2B2B;
+
+    span {
+      font-weight: 700;
+    }
+
+    .price {
+      font-weight: 300;
+      color: #448FFF;
+    }
+  }
+
+  &__cross {
+    background-image: url(../images/cross.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  &__check {
+    background-image: url(../images/check.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}

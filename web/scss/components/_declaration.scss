@@ -1,0 +1,46 @@
+.declaration {
+  padding: 85px 0;
+  background-image: url(../images/declaration-bg.png);
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    width: 60%;
+
+    img {
+      margin-left: 0;
+    }
+  }
+  
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-size: 64px;
+    line-height: 77px;
+
+    .white {
+      color: var(--light-color);
+    }
+  
+    .blue {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--light-color);
+  }
+
+  &__image {
+    width: 40%;
+  }
+}

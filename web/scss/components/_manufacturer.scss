@@ -1,0 +1,45 @@
+.manufacturer {
+  padding: 90px 0;
+  background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
+
+  &__inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 60px 0 50px 50px;
+    border-radius: 20px;
+    background-image: url(../images/manufacturer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    font-family: 'Inter';
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-weight: 100;
+    font-size: 30px;
+    color: #0560E8;
+  }
+
+  &__item {
+    padding-left: 40px;
+    background-image: url(../images/manufacturer-check.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    color: #2B2B2B;
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+}

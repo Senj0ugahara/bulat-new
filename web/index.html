@@ -8,9 +8,10 @@
   <meta name="theme-color" content="#111111" />
   <title>Аппарат Булат</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -39,7 +40,7 @@
           </ul>
         </nav>
         <div class="header__right">
-          <button class="btn-reset header__btn">Заказать звонок</button>
+          <button class="btn-reset header__btn" data-fancybox data-src="#callme">Заказать звонок</button>
           <div class="header__phone header-phone">
             <a class="header-phone__link" href="tel:+78002505932">8 800 250 59 32</a>
             <span class="header-phone__title">Звонок по России бесплатный</span>
@@ -239,7 +240,7 @@
                 <div class="swiper-slide video-reviews__slide">
                   <a class="video-reviews__item" data-fancybox="https://youtu.be/ZCL22ipquCI" href="https://youtu.be/ZCL22ipquCI">
                     <div class="video-reviews__image">
-                      <img src="//img.youtube.com/vi/ZCL22ipquCI/maxresdefault.jpg" alt="">
+                      <img src="images/video-review-img.png" alt="">
                     </div>
                     <h4 class="video-reviews__name">Пескоструйный аппарат «Булат» в деталях</h4>
                     <p class="video-reviews__desc">Рассмотрите «Булат» вблизи, со всех сторон и в хорошем качестве! Очищаем доску от старой краски.</p>
@@ -303,10 +304,10 @@
             </div>
             
             <div class="video-reviews__button video-reviews__button-prev">
-              <img src="images/swiper-arrow.png" alt="icon">
+              <img src="images/swiper-arrow-prev.png" alt="icon">
             </div>
             <div class="video-reviews__button video-reviews__button-next">
-              <img src="images/swiper-arrow.png" alt="icon">
+              <img src="images/swiper-arrow-next.png" alt="icon">
             </div>
           </div>
         </div>
@@ -599,12 +600,847 @@
           </div>
         </div>
       </section>
+      
+      <section class="peculiarities">
+        <div class="container">
+          <h2 class="title peculiarities__title centered">Пескоструйный аппарат в действии</h2>
+          <div class="peculiarities__tabs">
+            <button class="btn-reset peculiarities__btn peculiarities__btn_1 peculiarities__btn_active" filter="one" val="on">Очистка поверхности<br> автомобильного диска</button>
+            <button class="btn-reset peculiarities__btn peculiarities__btn_2" filter="two" val="off">Матирование стекла</button>
+            <button class="btn-reset peculiarities__btn peculiarities__btn_3" filter="three" val="off">Обработка древесины</button>
+          </div>
+          <div class="peculiarities__content">
+            <div class="peculiarities__item peculiarities-item" filter="one">
+              <div class="peculiarities-item__left">
+                <h4 class="peculiarities-item__name">
+                  Испытания проводились <br>
+                  на аппарате «Булат» ПС-40
+                </h4>
+                <ul class="list-reset">
+                  <li><span>Объем бака:</span> 40 литров</li>
+                  <li><span>Расход абразива:</span> 45 кг/ч</li>
+                  <li><span>Вес:</span> 17,3 кг</li>
+                </ul>
+                <button class="btn-reset btn peculiarities-item__btn">Хочу такой же!</button>
+              </div>
+              <div class="peculiarities-item__right">
+                <a class="peculiarities-item__video" data-fancybox="" href="">
+                  <div class="peculiarities-item__video-image">
+                    <img src="" alt="">
+                  </div>
+                </a>
+                <div class="peculiarities-item__time">
+                  <div class="peculiarities-item__icon">
+                    <img src="images/peculiarities/peculiarities-time.svg" alt="icon">
+                  </div>
+                  <span class="peculiarities-item__duration">16:37</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="peculiarities__item peculiarities-item" filter="two" style="display:none;">
+              <div class="peculiarities-item__left">
+                <h4 class="peculiarities-item__name">
+                  Испытания проводились<br>
+                  на аппарате «Булат» ПС-40
+                </h4>
+                <ul class="list-reset">
+                  <li><span>Объем бака:</span> 40 литров</li>
+                  <li><span>Расход абразива:</span> 45 кг/ч</li>
+                  <li><span>Вес:</span> 17,3 кг</li>
+                </ul>
+                <button class="btn-reset btn peculiarities-item__btn">Хочу такой же!</button>
+              </div>
+              <div class="peculiarities-item__right">
+                <a class="peculiarities-item__video" data-fancybox="" href="">
+                  <div class="peculiarities-item__video-image">
+                    <img src="" alt="">
+                  </div>
+                </a>
+                <div class="peculiarities-item__time">
+                  <div class="peculiarities-item__icon">
+                    <img src="images/peculiarities/peculiarities-time.svg" alt="icon">
+                  </div>
+                  <span class="peculiarities-item__duration">06:07</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="peculiarities__item peculiarities-item" filter="three" style="display:none;">
+              <div class="peculiarities-item__left">
+                <h4 class="peculiarities-item__name">
+                  Испытания проводились<br>
+                  на аппарате «Булат» ПС-40
+                </h4>
+                <ul class="list-reset">
+                  <li><span>Объем бака:</span> 40 литров</li>
+                  <li><span>Расход абразива:</span> 45 кг/ч</li>
+                  <li><span>Вес:</span> 17,3 кг</li>
+                </ul>
+                <button class="btn-reset btn peculiarities-item__btn">Хочу такой же!</button>
+              </div>
+              <div class="peculiarities-item__right">
+                <a class="peculiarities-item__video" data-fancybox="" href="">
+                  <div class="peculiarities-item__video-image">
+                    <img src="" alt="">
+                  </div>
+                </a>
+                <div class="peculiarities-item__time">
+                  <div class="peculiarities-item__icon">
+                    <img src="images/peculiarities/peculiarities-time.svg" alt="icon">
+                  </div>
+                  <span class="peculiarities-item__duration">11:01</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms">
+        <div class="container">
+          <h2 class="title terms__title centered"><span>Заберите заказ сразу,</span> а платите - потом!</h2>
+          <p class="terms__subtitle centered">Самые выгодные условия покупки</p>
+          <div class="terms__content">
+            <div class="terms__info">
+              <ul class="list-reset terms__list">
+                <li class="terms__item terms-item">
+                  <div class="terms-item__icon">
+                    <img src="images/terms/terms-icon1.svg" alt="icon">
+                  </div>
+                  <p class="terms-item__desc">
+                    <span>Оставьте заявку</span> на получение товара в кредит.
+                  </p>
+                </li>
+                <li class="terms__item terms-item">
+                  <div class="terms-item__icon">
+                    <img src="images/terms/terms-icon2.svg" alt="icon">
+                  </div>
+                  <p class="terms-item__desc">
+                    <span>Дождитесь звонка</span> от оператора. Мы поможем подобрать надежный банк с лучшими условиями и минимальной процентной ставкой (от 5%).
+                  </p>
+                </li>
+                <li class="terms__item terms-item">
+                  <div class="terms-item__icon">
+                    <img src="images/terms/terms-icon3.svg" alt="icon">
+                  </div>
+                  <p class="terms-item__desc">
+                    Получите <span>свой пескоструйный аппарат</span> уже через неделю с момента заказа!
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="terms__image">
+                <img src="images/terms/terms-img.png" alt="image">
+            </div>
+          </div>
+          <button class="btn-reset btn terms__btn" data-fancybox data-src="#popupTerms">Оставить заявку на «Булат»</button>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="title reviews__title centered">Отзывы наших клиентов</h2>
+          <div class="reviews__content">
+            <div class="reviews__button reviews__button-prev">
+              <img src="images/swiper-arrow-prev.png" alt="icon">
+            </div>
+            <div class="reviews__button reviews__button-next">
+              <img src="images/swiper-arrow-next.png" alt="icon">
+            </div>
+            <div class="swiper reviews__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews__slide">
+                    <img src="images/reviews/reviews-img1.png" alt="image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews__slide">
+                    <img src="images/reviews/reviews-img2.png" alt="image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews__slide">
+                    <img src="images/reviews/reviews-img3.png" alt="image">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews__slide">
+                      <img src="images/reviews/reviews-img4.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews__slide">
+                      <img src="images/reviews/reviews-img5.png" alt="image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="reviews__slide">
+                      <img src="images/reviews/reviews-img6.png" alt="image">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="reviews__send-review">
+              <button class="btn-reset btn review__btn" data-fancybox data-src="#popupReview">Оставить отзыв</button>
+              <p class="reviews__desc">Получите 300 рублей за отзыв на свой телефон</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sale">
+        <div class="container">
+          <h2 class="title sale__title centered"><span class="white">При заказе пескоструя «Булат»</span> <span class="blue">до 8 июля</span></h2>
+          <p class="sale__subtitle centered">вы получите два полезных подарка и скидку 30%</p>
+          <div class="sale__image">
+            <img src="images/sale/sale-img.png" alt="image">
+          </div>
+          <div class="sale__content">
+            <div class="sale__gifts">
+              <div class="sale__item sale-item">
+                <div class="sale-item__image">
+                  <img src="images/sale/sale-item-img1.png" alt="image">
+                </div>
+                <p class="sale-item__name">Купон на 1000 рублей</p>
+              </div>
+              <div class="sale__item sale-item">
+                <div class="sale-item__image">
+                  <img src="images/sale/sale-item-img2.png" alt="image">
+                </div>
+                <p class="sale-item__name">Расширенная гарантия</p>
+              </div>
+            </div>
+            <div class="form-container">
+              <p class="form-container__offer centered">
+                Закажите до 08.07<br>
+                и получите, помимо подарков,<br>
+                скидку 30%
+              </p>
+              <div class="buy__prices form-container__prices">
+                <span class="buy__price buy__price_old form-container__price_old"><del>17490 руб.</del></span>
+                <span class="buy__price buy__price_new form-container__price_new">11750 руб.</span>
+              </div>
+              <form action="" method="" class="form">
+                <select class="custom-list" name="">
+                  <option value=""><span style="font-weight:700;">Объем:</span> 27 литров</option>
+                  <option value=""><span style="font-weight:700;">Объем:</span> 35 литров</option>
+                  <option value=""><span style="font-weight:700;">Объем:</span> 37 литров</option>
+                  <option value=""><span style="font-weight:700;">Объем:</span> 40 литров</option>
+                </select>
+                <input type="text" name="name" placeholder="Как к вам можно обращатсья?">
+                <input type="text" name="phone" placeholder="Номер телефона">
+                <div class="dop-container">
+                  <lable class="custom-checkbox">
+                    <input class="custom-checkbox__input custom-checkbox-js" type="checkbox">
+                    <span class="custom-checkbox__check">
+                      С набором из 3 сопел
+                    </span>
+                  </lable>
+                  <lable class="custom-checkbox custom-checkbox_bold">
+                    <input class="custom-checkbox__input" type="checkbox">
+                    <span class="custom-checkbox__check rassrochka_checkbox-js">
+                      Покупка в кредит
+                    </span>
+                  </lable>
+                </div>
+                <button class="btn-reset btn form__btn">Заказать с подарками</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison">
+        <div class="container">
+          <h2 class="title comparison__title centered">
+            Что лучше: самодельный или готовый<br>
+            пескоструйный аппарат?
+          </h2>
+          <p class="comparison__subtitle centered">Вдохновлен любителями, но создан профессионалами</p>
+          <table class="comparison__table comparison-table">
+            <thead>
+              <tr>
+                <td class="comparison-table__col">
+                  <h3 class="comparison-table__title">Самодельный</h3>
+                </td>
+                <td class="comparison-table__col comparison-table__title">
+                  <h3 class="comparison-table__title">Готовый</h3>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="comparison-table__col">
+                  <p class="comparison-table__desc comparison-table__cross">
+                    Чаще всего используется обычный шланг, 
+                    не предназначенный для пескоструйных аппаратов.
+                  </p>
+                </td>
+                <td class="comparison-table__col">
+                  <p class="comparison-table__desc comparison-table__check">
+                    В комплекте шланг, утвержденный по ГОСТу и предназначенный исключительно 
+                    для пескоструйных аппаратов.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Крепление сопла подручными средствами. Может сорвать во время работы.
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      Крепления сопла подогнаны по размеру, удобно соединяются и герметизируются.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Пистолет оборудован обычным шаровым краном, который не предназначен для песка и “заклинит” через 2-3 применения.
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      Профессиональный пистолет, который разработан специально для абразивов.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Нет никакого покрытия или используется бытовая краска. Аппарат быстро ржавеет, подвергается коррозии.
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      Для покрытия используется сертифицированная порошковая краска 389 U PE, которая надежно защитит аппарат от коррозии
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Любительская сварка, которая может привести к взрыву бункера
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      Автоматическая сварка, которая гарантирует 100% безопасность оборудования.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Предохранительный клапан отсутствует, а значит давление внутри бака никак не контролируется.
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      Манометр на 10 атм и сертифицированный спускной клапан на 8 атм по ГОСТу позволяют полностью контролировать давление в бункере.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Нет осушителя, в аппарате скапливается конденсат, что делает абразив влажным. Пескоструй начинает “плеваться”.
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      Установлены блоки подготовки воздуха AFR-2000. Аппарат работает без перебоев и не “плюется” песком.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__cross">
+                      Впустую потраченные <span>время и деньги</span>...
+                    </p>
+                  </td>
+                  <td class="comparison-table__col">
+                    <p class="comparison-table__desc comparison-table__check">
+                      <span>Красивый и надежный аппарат</span> <span class="price">от 11750 рублей</span>
+                    </p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+          <button class="btn-reset btn comparison__btn">Выбрать «Булат»</button>
+          <p class="comparison__subbutton centered">С гарантией 24 месяца!</p>
+        </div>
+      </section>
+
+      <section class="penogenerator">
+        <div class="container">
+          <h2 class="title penogenerator__title centered">Пеногенератор</h2>
+          <p class="penogenerator__subtitle centered"><span class="white">При заказе с пескоструем - скидка 30%.</span> <span class="blue">Вместе - выгоднее!</span></p>
+          <div class="penogenerator__content">
+            <div class="penogenerator__left">
+              <img src="images/penogenerator/penogenerator-img.png" alt="image">
+              <a class="penogenerator__video" href="">
+                <img src="images/penogenerator/penogenerator-video.png" alt="image">
+              </a>
+            </div>
+            <div class="penogenerator__right">
+              <p class="penogenerator__desc">
+                Со специальной насадкой пескоструй «Булат» легко превращается в пеногенератор. Заботьтесь о своей машине сами — экономьте до 3 тысяч рублей в месяц на автомойках.
+              </p>
+              <p class="penogenerator__desc">Достоинства пеногенератора невозможно переоценить:</p>
+              <ul class="list-reset penogenerator__list">
+                <li class="penogenerator__item">Высокая производительность</li>
+                <li class="penogenerator__item">Густая пена. Экономия моющих средств до 30%</li>
+                <li class="penogenerator__item">Простота и компактность</li>
+                <li class="penogenerator__item">Оперативность (моет кузов всего за 3–5 минут)</li>
+              </ul>
+              <p class="penogenerator__desc">Характеристики:</p>
+              <ul class="list-reset">
+                <li>Рабочее давление воды: 6 бар</li>
+                <li>Максимальное давление воды: 8 бар</li>
+                <li>Материал: AISI 304</li>
+              </ul>
+              <div class="buy penogenerator__buy">
+                <button class="btn-reset btn penogenerator__btn">Заказать</button>
+                <div class="buy__prices">
+                  <span class="buy__price buy__price_old"><del>5700 руб.</del></span>
+                  <span class="buy__price buy__price_new">3990 руб.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="manufacturer">
+        <div class="container">
+          <div class="manufacturer__inner">
+            <h2 class="title manufacturer__title">
+              Вы заказываете пескоструй<br>
+              напрямую от завода-производителя!
+            </h2>
+            <p class="manufacturer__desc">Для вас это означает:</p>
+            <ul class="list-reset manufacturer__list">
+              <li class="manufacturer__item">Без посредников и наценок</li>
+              <li class="manufacturer__item">Автоклавы всегда в наличии,<br> отправка будет незамедлительно</li>
+              <li class="manufacturer__item">Вся продукция проходит строгие проверки в<br> отделе технического контроля — брак исключён</li>
+              <li class="manufacturer__item">Мы работаем исключительно в соответствии с<br> российским законодательством, а это значит, что все<br> наши гарантии зафиксированы в договоре</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="declaration">
+        <div class="container declaration__container">
+          <div class="declaration__text">
+            <img src="images/arms.png" alt="image">
+            <h2 class="title declaration__title">
+              <span class="blue">Пескоструй булат -</span> <span class="white">качество подтверждено декларацией соответствия</span>
+            </h2>
+            <p class="declaration__subtitle">Ещё один признак надёжного производителя</p>
+          </div>
+          <div class="declaration__image">
+            <a href="images/doc.png" target="_blank">
+              <img src="images/doc.png" alt="image">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery">
+        <div class="container">
+          <h2 class="title delivery__title centered">Быстрая доставка товара по всей России и СНГ</h2>
+          <ul class="list-reset delivery__list">
+            <li class="delivery__item delivery-item">
+              <div class="delivery-item__icon">
+                <img src="images/delivery/delivery-icon1.svg" alt="icon">
+              </div>
+              <h3 class="delivery-item__name">Курьерская<br> служба</h3>
+              <p class="delivery-item__desc">
+                доставит вашу посылку<br>
+                за срок от 2 до 7 дней
+              </p>
+            </li>
+            <li class="delivery__item delivery-item">
+              <div class="delivery-item__icon">
+                <img src="images/delivery/delivery-icon2.svg" alt="icon">
+              </div>
+              <h3 class="delivery-item__name">Только при<br> получении</h3>
+              <p class="delivery-item__desc">
+                вы оплачиваете заказ
+              </p>
+            </li>
+            <li class="delivery__item delivery-item">
+              <div class="delivery-item__icon">
+                <img src="images/delivery/delivery-icon3.svg" alt="icon">
+              </div>
+              <h3 class="delivery-item__name">Средняя<br> стоимость</h3>
+              <p class="delivery-item__desc">
+                доставки<br>
+                по РФ — 400-800 руб.
+              </p>
+            </li>
+            <li class="delivery__item delivery-item">
+              <div class="delivery-item__icon">
+                <img src="images/delivery/delivery-icon4.svg" alt="icon">
+              </div>
+              <h3 class="delivery-item__name">Более 700<br> отправок</h3>
+              <p class="delivery-item__desc">
+                мы осуществляем<br>
+                за месяц
+              </p>
+            </li>
+          </ul>
+          <button class="btn-reset btn delivery__btn" data-fancybox data-src="#popupConsultation">Узнать стоимость доставки</button>
+          <div class="delivery__logos">
+            <img src="images/delivery/pochta.png" alt="image">
+            <img src="images/delivery/dpd.png" alt="image">
+            <img src="images/delivery/cdek.png" alt="image">
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation">
+        <div class="container">
+          <div class="consultation__inner">
+            <div class="consultation__left">
+              <h2 class="title consultation__title">Остались вопросы?</h2>
+              <form action="" method="" class="form consultation__form">
+                <input type="text" name="name" placeholder="Как к вам можно обращатсья?">
+                <input type="text" name="phone" placeholder="Номер телефона">
+                <button class="btn-reset btn form__btn">Перезвоните мне</button>
+              </form>
+            </div>
+            <div class="consultation__right">
+              <p class="consultation__desc">Или позвоните прямо сейчас</p>
+              <a class="consultation__phone" href="tel:+78002505932">8 800 250 59 32</a>
+              <p class="consultation__desc">мы работаем <span>с 9:00 до 21:00 по МСК!</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map" id="map">
+        <div class="container map__container">
+            <p class="map__title">Купить пескоструй еще удобнее в наших<br> розничных <span>магазинах «Градус Хаус»</span></p>
+            <p class="map__text">В наших магазинах вы сможете:</p>
+            <div class="row row-cols-1 row-cols-sm-2">
+                <div class="col">
+                    <ul class="list-reset list_blue">
+                        <li>купить товары для консервирования,<br> самогоноварения, копчения</li>
+                        <li>оформить заявку на самовывоз и забрать<br> товар, купленный в интернет-магазине</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-reset list_blue">
+                        <li>оформить скидочную карту</li>
+                        <li>сдать товар по гарантии, оформить<br> возврат или обмен без бюрократии</li>
+                        <li>получить консультацию специалиста</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="map__wrapper">
+            <div id="shop-map" class="map__item"></div>
+            <div class="map__contacts">
+                <p class="map__caption">Контакты</p>
+                <div class="map__phone d-flex">
+                  <div class="map__icon">
+                    <img src="images/map-phone.svg" alt="">
+                  </div>
+                  <div class="map__phone-inner">
+                    <div>
+                      <span>Тел.</span>
+                      <a href="tel:88332451246">8 (8332) 45-12-46</a>
+                    </div>
+                    <div>
+                      <span>Моб.</span>
+                      <a href="tel:89229951246">8 (922) 995-12-46</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="map__mail d-flex">
+                  <div class="map__icon">
+                    <img src="images/map-mail.svg" alt="">
+                  </div>
+                  <div class="map__mail-inner">
+                    <div>
+                      <span>E-mail</span>
+                      <a href="mailto:info@helicon-prom.ru">info@helicon-prom.ru</a>
+                    </div>
+                  </div>
+              </div>
+                <div class="map__social d-flex">
+                    <a class="icon-social icon-social_vk" href="https://vk.com/gradus_haus" target="_blank"></a>
+                    <a class="icon-social icon-social_ok" href="https://ok.ru/group/63447127818482" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <!-- map -->
+        <script>
+          setTimeout(function(){
+              // получение списка адресов магазинов
+              const requestURL = 'https://apispn.ru/json/shops/';
+              const request = new XMLHttpRequest();
+              request.open('GET', requestURL);
+              request.responseType = 'json';
+              request.send();
+              
+              request.onload = function() {
+                  const citiesJSON = JSON.parse(request.response);
+      
+                  // создание карты с метками
+                  const script = document.createElement("script");
+                  script.type = "text/javascript";
+                  script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+                  document.querySelector('body').appendChild(script);
+      
+                  script.onload = function(){
+                      ymaps.ready(function(){
+                          const myMap = new ymaps.Map('shop-map', {
+                              center: [55.536837, 42.473709],
+                              zoom: 5,
+                              controls: ['zoomControl']
+                          });
+      
+                          myMap.behaviors.disable('scrollZoom'); 
+      
+                          // создание меток на общей карте
+                          Object.keys(citiesJSON).forEach(function(inx) {
+                              let city = this[inx]['city'];
+                              this[inx]['shops'].forEach(function(shop){
+                                  let mark = new ymaps.Placemark(
+                                      shop['coords'],
+                                      {
+                                          hintContent: 'Градус Хаус в г. ' + city + ', ' + shop['name'],
+                                      },
+                                      {
+                                          iconLayout: 'default#image',
+                                          iconImageHref: 'images/placemark.png',
+                                          iconImageSize: [66, 79],
+                                          iconImageOffset: [-33, -38]
+                                      }
+                                  );
+                                  mark.events.add('click', function (e){
+                                      city_input.value = city;
+                                      cities_list.innerHTML = '';
+                                      city_btn.click();
+                                  });
+                                  myMap.geoObjects.add(mark);
+                              });
+                          }, citiesJSON);
+      
+                          // устанавливает событие клика на доступные города
+                          const setEvent = function() {
+                              cities_list.childNodes.forEach(function(e) {
+                                  e.addEventListener('click', function(inx) {
+                                      city_input.value = e.innerText;
+                                      cities_list.innerHTML = '';
+                                      city_btn.click();
+                                  });
+                              });
+                          }
+                      });
+                  }
+              }
+          }, 10);
+        </script>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper d-flex align-items-center flex-column flex-lg-row">
+            <div class="footer__left d-flex flex-column">
+                <img class="footer__logo" src="images/logo.svg" alt="">
+                <a class="footer__number" href="tel:88002505932">8 800 250 59 32</a>
+                <span class="footer__info">телефон горячей линии</span>
+                <div class="footer__social d-flex">
+                    <a class="icon-social icon-social_vk" href="https://vk.com/gradus_haus" target="_blank"></a>
+                    <a class="icon-social icon-social_ok" href="https://ok.ru/group/63447127818482" target="_blank"></a>
+                </div>
+            </div>
+            <div class="footer__center d-flex flex-column">
+                <p class="footer__info">
+                    <b>ИНН:</b> 432500888349<br>
+                    ОГРНИП 314744919000039
+                </p>
+                <p class="footer__info">
+                    <b>Адрес почтовый (фактический):</b><br>
+                    610006, г. Киров, Октябрьский пр-т, д. 24<br>
+                    Для корреспонденции: 610000,а/я 158
+                </p>
+            </div>
+            <div class="footer__right d-flex flex-column">
+                <a class="footer__link" href="uploadupdate/confidentiality.pdf" target="_blank">Политика конфиденциальности</a>
+                <a class="footer__link" href="uploadupdate/oferta-rus.pdf" target="_blank">Договор оферты</a>
+                <a class="footer__link" href="" target="_blank">Доставка по всей России</a>
+            </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <p class="footer__copyright">
+          © 2010 - 2022 peskostruj-bulat-official.ru Все права защищены.<br>
+          Использование материалов разрешено только с согласия правообладателей.<br>
+          Полное или частичное копирование сайта запрещено и преследуется по закону.
+        </p>
+      </div>
+    </footer>
   </div>
 
+
+  <!-- Кнопка в шапке -->
+  <div class="popup" id="callme">
+    <div class="form-container">
+      <form class="call-modal">
+        <p class="popup__title centered">Заказать обратный звонок</p>
+        <p class="popup__subtitle centered">Оставьте контактную информацию, мы перезвоним в течение 5 минут</p>
+        <div class="popup__fields">
+          <div class="popup__field">
+            <p>Имя</p>
+            <input type="text" name="name" placeholder="Дмитрий">
+          </div>
+          <div class="popup__field">
+            <p>Номер телефона</p>
+            <input type="text" name="phone" placeholder="+7 (***) ***-**-**">
+          </div>
+        </div>
+        <input type="submit" value="Отправить" class="btn popup__btn">
+        <p class="popup__info centered">
+          Нажимая кнопку “Отправить”, вы соглашаетесь на обработку персональных данных, а так же с 
+          <a class="blue" href="uploadupdate/confidentiality.pdf" target="_blank">политикой конфиденциальности</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Кнопка в блоке consultation -->
+  <div class="popup" id="popupConsultation">
+      <div class="form-container">
+        <form class="call-modal">
+          <p class="popup__title centered">Оставьте контактную информацию</p>
+          <p class="popup__subtitle centered">Мы перезвоним в течение 5 минут, рассчитаем стоимость доставки и сообщим вам</p>
+          <div class="popup__fields">
+            <div class="popup__field">
+              <p>Имя</p>
+              <input type="text" name="name" placeholder="Дмитрий">
+            </div>
+            <div class="popup__field">
+              <p>Номер телефона</p>
+              <input type="text" name="phone" placeholder="+7 (***) ***-**-**">
+            </div>
+            <div class="popup__field">
+              <p>Город</p>
+              <input type="text" name="phone" placeholder="Москва">
+            </div>
+          </div>
+          <input type="submit" value="Отправить" class="btn popup__btn">
+          <p class="popup__info centered">
+            Нажимая кнопку “Отправить”, вы соглашаетесь на обработку персональных данных, а так же с 
+            <a class="blue" href="uploadupdate/confidentiality.pdf" target="_blank">политикой конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Кнопка в блоке terms -->
+    <div class="popup" id="popupTerms">
+        <div class="form-container">
+          <form class="call-modal">
+            <p class="popup__title centered">Осталось совсем немного</p>
+            <p class="popup__subtitle centered">Оставьте контактную информацию, мы перезвоним<br> и подберем лучшие условия для кредитования</p>
+            <div class="popup__fields">
+              <div class="popup__field">
+                <p>Имя</p>
+                <input type="text" name="name" placeholder="Дмитрий">
+              </div>
+              <div class="popup__field">
+                <p>Номер телефона</p>
+                <input type="text" name="phone" placeholder="+7 (***) ***-**-**">
+              </div>
+              <div class="popup__field">
+                <p>Выберите пескоструйный аппарат</p>
+                <select class="custom-list" name="">
+                  <option value=""><span style="font-weight:700;">Объем:</span> 27 литров - цена</option>
+                  <option value=""><span style="font-weight:700;">Объем:</span> 35 литров - цена</option>
+                  <option value=""><span style="font-weight:700;">Объем:</span> 37 литров - цена</option>
+                  <option value=""><span style="font-weight:700;">Объем:</span> 40 литров - цена</option>
+                </select>
+              </div>
+            </div>
+            <input type="submit" value="Отправить" class="btn popup__btn">
+            <p class="popup__info centered">
+              Нажимая кнопку “Отправить”, вы соглашаетесь на обработку персональных данных, а так же с 
+              <a class="blue" href="uploadupdate/confidentiality.pdf" target="_blank">политикой конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Отправка отзыва -->
+      <div class="popup" id="popupReview">
+          <div class="form-container">
+            <form class="call-modal">
+              <p class="popup__title"><span class="blue">Спасибо за то,</span><br>что помогаете нам стать лучше</p>
+              <div class="popup__fields">
+                <div>
+                  <div class="popup__field">
+                    <p>Имя</p>
+                    <input type="text" name="name" placeholder="Дмитрий">
+                  </div>
+                  <div class="popup__field">
+                    <p>Номер телефона</p>
+                    <input type="text" name="phone" placeholder="+7 (***) ***-**-**">
+                  </div>
+                </div>
+                <div>
+                  <div class="popup__field">
+                    <p>Отзыв</p>
+                    <textarea name="text" name="review" placeholder="Неделю назад я приобрел(-а)..."></textarea>
+                  </div>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  в течение 24 часов мы проверим отзыв и переведем денежные средства на ваш номер<br>
+                  телефона, согласно условиям акции
+                </li>
+                <li>
+                  Пескоструй Булат должен быть приобретен на официальных сайтах: peskostruj-bulat.ru,<br>
+                  peskostruj-bulat-official.ru, glav-stanok.ru и gradushaus.ru, либо в магазинах ГрадусХаус в вашем городе.
+                </li>
+              </ul>
+              <div class="popup__inner">
+                <input type="submit" value="Отправить" class="btn popup__btn">
+                <p class="popup__info">
+                  Нажимая кнопку “Отправить”, вы соглашаетесь на<br> обработку персональных данных, а так же с<br> 
+                  <a class="blue" href="uploadupdate/confidentiality.pdf" target="_blank">политикой конфиденциальности</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Завершение -->
+        <div class="popup" id="popupFinish" style="display:none;">
+            <div class="form-container">
+              <div class="popup__text">
+                <p class="popup__title">Благодарим за доверие!</p>
+                <p class="popup__subtitle">Наш менеджер уже получил ваше обращение</p>
+              </div>
+            </div>
+          </div>
+  
+
+  <script src="scripts/jquery-3.6.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="scripts/custom.js"></script>
 </body>
 

@@ -1,0 +1,66 @@
+.consultation {
+  padding: 90px 0;
+  background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
+
+  &__inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 32px 106px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180.07deg, rgba(231, 236, 254, 0.32) 0.06%, #D9E2FF 99.94%);
+    border: 1px solid #E1E1E1;
+    box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
+    border-radius: 20px;
+  }
+
+  &__title {
+    margin-bottom: 54px;
+    background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 54px;
+    line-height: 65px;
+  }
+
+  &__form {
+    input[type=text] {
+      max-width: 430px;
+      margin-left: 0;
+    }
+
+    .form__btn {
+      margin: 30px 0 0;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2B2B2B;
+
+    span {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 16px;
+    background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 65px;
+  }
+}

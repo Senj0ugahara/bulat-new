@@ -1,0 +1,202 @@
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 35px 10px;
+  border: 1px solid #F5F5F5;
+  box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
+  border-radius: 20px;
+  background: var(--light-color);
+
+  &__offer {
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__prices {
+    margin: 0 0 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__price {
+    &_old {
+      margin-right: 15px;
+      font-size: 23px;
+      line-height: 28px;
+      color: #636363;
+    }
+
+    &_new {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__btn {
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+
+.custom-list {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto 20px;
+  padding: 0 28px;
+  border-radius: 12px;
+  background-color: var(--light-color);
+  border: 2px solid #448FFF;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2B2B2B;
+}
+
+.custom-select {
+  position: relative;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+  background-color: var(--light-color);
+  border: 2px solid #448FFF;
+}
+
+.selectBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 16px 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2B2B2B;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 28px;
+    top: 22px;
+    width: 23px;
+    height: 14px;
+    background-image: url(../images/form-arrow.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
+
+.dropDown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  border: none;
+  list-style: none;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #b5bbc7;
+
+  li {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000101;
+    text-align: left;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 20px 0 40px;
+  }
+}
+
+form input[type=text] {
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  display: block;
+  margin: 0 auto 20px;
+  padding: 16px 0 16px 28px;
+  border-radius: 12px;
+  border: 2px solid #448FFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4);
+  outline: 0;
+}
+
+.dop-container {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 30px;
+}
+
+.custom-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #2B2B2B;
+
+  &__input {
+    position: absolute;
+    top: 0;
+  }
+
+  &__check {
+    display: block;
+    line-height: 22px;
+    padding: 8px 0 5px 55px;
+    user-select: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 2px solid #448FFF;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+  }
+}
+
+.custom-checkbox__input:checked + .custom-checkbox__check::after {
+  background-image: url(../images/icon-tick.png);
+}
