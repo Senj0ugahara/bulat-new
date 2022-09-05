@@ -95,7 +95,7 @@
               </li>
             </ul>
             <div class="buy hero__buy">
-              <button class="btn-reset btn hero__btn">Купить</button>
+              <button class="btn-reset btn hero__btn" data-fancybox data-src="#order-modal">Купить</button>
               <div class="buy__prices">
                 <span class="buy__price buy__price_old"><del>17490 руб.</del></span>
                 <span class="buy__price buy__price_new">11750 руб.</span>
@@ -1295,7 +1295,7 @@
 
 
   <!-- Кнопка в шапке -->
-  <div class="popup" id="callme">
+  <div class="popup" id="callme" style="display:none;">
     <div class="form-container">
       <form class="call-modal">
         <p class="popup__title centered">Заказать обратный звонок</p>
@@ -1320,7 +1320,7 @@
   </div>
 
   <!-- Кнопка в блоке consultation -->
-  <div class="popup" id="popupConsultation">
+  <div class="popup" id="popupConsultation" style="display:none;">
       <div class="form-container">
         <form class="call-modal">
           <p class="popup__title centered">Оставьте контактную информацию</p>
@@ -1349,7 +1349,7 @@
     </div>
 
     <!-- Кнопка в блоке terms -->
-    <div class="popup" id="popupTerms">
+    <div class="popup" id="popupTerms" style="display:none;">
         <div class="form-container">
           <form class="call-modal">
             <p class="popup__title centered">Осталось совсем немного</p>
@@ -1383,7 +1383,7 @@
       </div>
 
       <!-- Отправка отзыва -->
-      <div class="popup" id="popupReview">
+      <div class="popup" id="popupReview" style="display:none;">
           <div class="form-container">
             <form class="call-modal">
               <p class="popup__title"><span class="blue">Спасибо за то,</span><br>что помогаете нам стать лучше</p>
@@ -1426,8 +1426,85 @@
           </div>
         </div>
 
+        <!-- Заказать -->
+        <div class="popup" id="order-modal" style="display:none;">
+          <div class="columns">
+            <div class="img-container">
+              <p class="popup__title"><span>Заказать</span><br> пескоструйный аппарат «Булат»</p>
+              <p class="popup__subtitle">В течение 5 минут с вами свяжется<br> менеджер для подтверждения заказа</p>
+              <div class="main-img">
+                <img src="images/popup/img1.png" alt="image">
+                <div class="popup__price">
+                  <p>Стоимость:</p>
+                  <span class="buy__price buy__price_new">11750 руб.</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-container">
+              <form class="call-modal">
+                <div class="popup__fields">
+                  <div class="popup__field">
+                    <p>Имя</p>
+                    <input type="text" name="name" placeholder="Дмитрий">
+                  </div>
+                  <div class="popup__field">
+                    <p>Номер телефона</p>
+                    <input type="text" name="phone" placeholder="+7 (***) ***-**-**">
+                  </div>
+                  <div class="popup__field">
+                    <p>Выберите объем</p>
+                    <select class="custom-list" name="">
+                      <option value=""><span style="font-weight:700;">Объем:</span> 27 литров - цена</option>
+                      <option value=""><span style="font-weight:700;">Объем:</span> 35 литров - цена</option>
+                      <option value=""><span style="font-weight:700;">Объем:</span> 37 литров - цена</option>
+                      <option value=""><span style="font-weight:700;">Объем:</span> 40 литров - цена</option>
+                    </select>
+                  </div>
+                  <div class="dop-container">
+                    <p class="dop-container__title centered">Выберите дополнительно</p>
+                    <div class="columns">
+                      <lable class="custom-checkbox">
+                        <input class="custom-checkbox__input custom-checkbox-js" type="checkbox">
+                        <p class="custom-checkbox__name">
+                          3 сопла<br> в комплекте
+                        </p>
+                        <span class="custom-checkbox__check">
+                          <img src="images/popup/dop/dop-1.jpg" alt="image">
+                        </span>
+                      </lable>
+                      <lable class="custom-checkbox">
+                        <input class="custom-checkbox__input custom-checkbox-js" type="checkbox">
+                        <p class="custom-checkbox__name">
+                          Пеногенератор
+                        </p>
+                        <span class="custom-checkbox__check">
+                          <img src="images/popup/dop/dop-2.jpg" alt="image">
+                        </span>
+                      </lable>
+                      <lable class="custom-checkbox">
+                        <input class="custom-checkbox__input custom-checkbox-js" type="checkbox">
+                        <p class="custom-checkbox__name">
+                          Воронка
+                        </p>
+                        <span class="custom-checkbox__check">
+                          <img src="images/popup/dop/dop-3.jpg" alt="image">
+                        </span>
+                      </lable>
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" value="Отправить" class="btn popup__btn">
+                <p class="popup__info centered">
+                  Нажимая кнопку “Отправить”, вы соглашаетесь на обработку персональных данных, а так же с 
+                  <a class="blue" href="uploadupdate/confidentiality.pdf" target="_blank">политикой конфиденциальности</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <!-- Завершение -->
-        <div class="popup" id="popupFinish" style="display:none;">
+        <div class="popup" id="popupFinish" style="display:none;" style="display:none;">
             <div class="form-container">
               <div class="popup__text">
                 <p class="popup__title">Благодарим за доверие!</p>

@@ -321,6 +321,151 @@
   }
 }
 
+#order-modal {
+  max-width: 1000px;
+  width: 100%;
+  padding: 34px 40px;
+  background: linear-gradient(180.07deg, #F0F5FF 0.06%, #D9E2FF 99.94%);
+  box-shadow: 0px 0px 200px rgba(0, 10, 103, 0.48);
+  border-radius: 12px;
+
+  .carousel__button.is-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+
+    span {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+
+  .main-img {
+    position: relative;
+
+    .popup__price {
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      p {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2B2B2B;
+      }
+    }
+
+    .buy__price_new {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 43px;
+
+    }
+  }
+
+  .form-container {
+    max-width: 390px;
+    padding: 34px 24px;
+    background: linear-gradient(180.07deg, #FBFCFF 0.06%, #E7EDFF 99.94%);
+    box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
+    border-radius: 20px;
+  }
+
+  .popup__fields {
+    max-width: 335px;
+    margin: 0 auto;
+  }
+
+  .popup__field {
+    input[type=text] {
+      height: 50px;
+    }
+
+    .custom-select {
+      height: 50px;
+      margin-bottom: 40px;
+    }
+
+    .selectBox {
+      padding: 12px 28px;
+
+      &::after {
+        top: 16px;
+      }
+    }
+  }
+
+  .dop-container {
+    max-width: none;
+    margin: 0 auto 40px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #2B2B2B;
+    }
+  }
+
+  .custom-checkbox {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__name {
+      margin-bottom: 10px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #2B2B2B;
+    }
+
+    &__input {
+      display: none;
+    }
+
+    &__check {
+      position: relative;
+      width: 96px;
+      height: 89px;
+      padding: 0;
+      border-radius: 8px;
+      overflow: hidden;
+
+      &::after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+      }
+    }
+  }
+}
+
 .fancybox__content>.carousel__button.is-close {
   top: 20px;
   right: 20px;
