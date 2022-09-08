@@ -2,6 +2,10 @@
   padding: 90px 0;
   background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
 
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
+
   &__inner {
     width: 1320px;
     margin: 0 auto;
@@ -57,7 +61,10 @@
   &__form {
     input[type=text] {
       max-width: 430px;
+      height: 88px;
       margin-left: 0;
+      background: rgba(222, 222, 222, 0.6);
+      box-shadow: inset 6px 6px 11px rgba(71, 71, 71, 0.25);
 
       @media (max-width: 1199.98px) {
         margin-left: auto;
@@ -65,12 +72,15 @@
 
       @media (max-width: 479.98px) {
         max-width: 230px;
+        height: 44px;
         font-size: 12px;
         line-height: 14px;
       }
     }
 
     .form__btn {
+      margin-left: 0;
+
       @media (max-width: 1199.98px) {
         margin: 0 auto;
       }

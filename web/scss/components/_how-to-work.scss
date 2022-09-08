@@ -18,6 +18,10 @@
     }
   }
 
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
+
   &__title {
     margin-bottom: 40px;
 
@@ -161,6 +165,8 @@
     }
 
     &_4 {
+      margin-bottom: 0!important;
+      
       &::before {
         content: '04';
         left: inherit;

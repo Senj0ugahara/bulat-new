@@ -3,6 +3,10 @@
   background-image: url(../images/reviews/reviews-bg.png);
   background-repeat: no-repeat;
 
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
+
   &__title {
     margin-bottom: 40px;
   }

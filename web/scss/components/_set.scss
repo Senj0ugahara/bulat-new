@@ -4,6 +4,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: 767.98px) {
+    padding: 20px 0;
+  }
+
   &__title {
     margin-bottom: 40px;
     background: linear-gradient(90deg, #FFFFFF 0%, #EAE5E5 31.04%, #FFFFFF 66.67%, #EAE3E3 97.71%);

@@ -18,6 +18,10 @@
     }
   }
 
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
+
   &__content {
     width: 1380px;
     display: flex;

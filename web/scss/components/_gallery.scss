@@ -2,6 +2,10 @@
   padding: 90px 0;
   background: linear-gradient(101.97deg, #EDF2FF 0%, #FAFBFF 100%);
 
+  @media (max-width: 767.98px) {
+    padding: 30px 0;
+  }
+
   &__wrapper {
     width: 1320px;
     display: flex;

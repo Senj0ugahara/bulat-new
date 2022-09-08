@@ -4,6 +4,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: 767.98px) {
+    padding: 40px 0;
+  }
+
   &__title {
     margin-bottom: 10px;
 
