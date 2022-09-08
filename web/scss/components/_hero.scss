@@ -13,7 +13,20 @@
     position: relative;
     max-width: 920px;
     padding: 100px 0 210px;
-    z-index: 10;
+    z-index: 5;
+
+    @media (max-width: 1549.98px) {
+      padding: 100px 0;
+    }
+
+    @media (max-width: 991.98px) {
+      max-width: none;
+      padding: 50px 0 100px;
+    }
+
+    @media (max-width: 479.98px) {
+      padding: 50px 0;
+    }
   }
 
   &__main-title {
@@ -26,6 +39,21 @@
     font-size: 22px;
     line-height: 26px;
     color: var(--light-color);
+
+    @media (max-width: 991.98px) {
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 11px;
+      line-height: 13px;
+    }
   }
 
   &__list {
@@ -33,12 +61,59 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     margin-bottom: 30px;
+
+    @media (max-width: 1549.98px) {
+      width: 50%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: 991.98px) {
+      grid-gap: 5px;
+      margin-bottom: 40px;
+    }
   }
 
   &__image {
     position: absolute;
     top: -100px;
     right: -150px;
+
+    @media (max-width: 1549.98px) {
+      top: 0;
+    }
+
+    @media (max-width: 1439.98px) {
+      top: 50px;
+      right: -200px;
+    }
+
+    @media (max-width: 1199.98px) {
+      top: 100px;
+    }
+
+    @media (max-width: 991.98px) {
+      top: 130px;
+      right: -150px;
+      width: 80%;
+    }
+
+    @media (max-width: 767.98px) {
+      top: 130px;
+      right: -130px;
+      width: 100%;
+    }
+
+    @media (max-width: 575.98px) {
+      top: 120px;
+      right: -50px;
+      width: 70%;
+    }
+
+    @media (max-width: 479.98px) {
+      top: 100px;
+      right: -100px;
+      width: 358px;
+    }
   }
 
   &__video {
@@ -46,6 +121,43 @@
     top: 400px;
     right: 0;
     z-index: 10;
+
+    @media (max-width: 767.98px) {
+      top: 370px;
+      right: 50px;
+      width: 20%;
+    }
+
+    @media (max-width: 575.98px) {
+      top: 260px;
+      right: 60px;
+    }
+
+    @media (max-width: 479.98px) {
+      right: 10px;
+    }
+  }
+
+  &__buy {
+    @media (max-width: 991.98px) {
+      justify-content: center;
+      flex-direction: column;
+
+      .buy__prices {
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+
+      .buy__price_old {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    @media (max-width: 991.98px) {
+      order: 2;
+    }
   }
 }
 
@@ -58,8 +170,23 @@
   box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
   border-radius: 20px;
 
+  @media (max-width: 991.98px) {
+    height: auto;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 10px;
+  }
+
   &__icon {
     margin-right: 20px;
+
+    img {
+      @media (max-width: 575.98px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   &__title {
@@ -70,12 +197,24 @@
     background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 767.98px) {
+      background: none;
+      -webkit-text-fill-color: #2B2B2B;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 13px;
+    }
   }
 
   &__desc {
     font-size: 22px;
     line-height: 26px;
     color: #2B2B2B;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 }
 
@@ -86,10 +225,31 @@
   backdrop-filter: blur(20px);
   border-radius: 17px;
 
+  @media (max-width: 767.98px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 479.98px) {
+    max-width: 190px;
+    padding: 18px 24px;
+    margin: 0 auto;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 991.98px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+
+    @media (max-width: 479.98px) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
   }
 
   &__title {
@@ -100,11 +260,23 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+
+    @media (max-width: 479.98px) {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
   }
 
   &__desc {
     font-size: 22px;
     line-height: 26px;
     color: var(--light-color);
+
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
   }
 }

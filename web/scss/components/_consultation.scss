@@ -13,6 +13,25 @@
     border: 1px solid #E1E1E1;
     box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
     border-radius: 20px;
+
+    @media (max-width: 1439.98px) {
+      width: 100%;
+      padding: 32px 54px;
+    }
+
+    @media (max-width: 1199.98px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 479.98px) {
+      padding: 32px 26px;
+    }
+  }
+
+  &__left {
+    @media (max-width: 1199.98px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -22,16 +41,47 @@
     -webkit-text-fill-color: transparent;
     font-size: 54px;
     line-height: 65px;
+
+    @media (max-width: 767.98px) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @media (max-width: 479.98px) {
+      margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 31px;
+    }
   }
 
   &__form {
     input[type=text] {
       max-width: 430px;
       margin-left: 0;
+
+      @media (max-width: 1199.98px) {
+        margin-left: auto;
+      }
+
+      @media (max-width: 479.98px) {
+        max-width: 230px;
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
 
     .form__btn {
-      margin: 30px 0 0;
+      @media (max-width: 1199.98px) {
+        margin: 0 auto;
+      }
+
+      @media (max-width: 479.98px) {
+        width: 190px;
+        height: 46px;
+        padding: 12px 0;
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
   }
 
@@ -43,12 +93,18 @@
     line-height: 29px;
     text-align: center;
     color: #2B2B2B;
+    
 
     span {
       background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 700;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
@@ -62,5 +118,16 @@
     font-weight: 700;
     font-size: 54px;
     line-height: 65px;
+
+    @media (max-width: 767.98px) {
+      font-size: 36px;
+      line-height: 46px;
+      text-align: center;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 26px;
+      line-height: 31px;
+    }
   }
 }

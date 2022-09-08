@@ -20,6 +20,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 
   &__subtitle {
@@ -29,22 +33,43 @@
     background: linear-gradient(90deg, #FFFFFF 0%, #C7C7C7 31.04%, #FFFFFF 66.67%, #C7C7C7 97.71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 
   &__image {
     position: absolute;
     top: 250px;
     left: 20px;
+
+    @media (max-width: 1199.98px) {
+      display: none;
+    }
   }
 
   &__content {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: 1549.98px) {
+      position: relative;
+      z-index: 10;
+    }
+
+    @media (max-width: 991.98px) {
+      justify-content: center;
+    }
   }
 
   &__gifts {
     margin-right: 70px;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 }
 

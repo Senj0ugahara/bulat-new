@@ -1,18 +1,32 @@
 .declaration {
   padding: 85px 0;
   background-image: url(../images/declaration-bg.png);
+  background-size: cover;
   background-repeat: no-repeat;
 
   &__container {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1199.98px) {
+      flex-direction: column;
+    }
   }
 
   &__text {
     width: 60%;
 
+    @media (max-width: 1199.98px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
     img {
       margin-left: 0;
+
+      @media (max-width: 1199.98px) {
+        display: none;
+      }
     }
   }
   
@@ -31,6 +45,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    @media (max-width: 479.98px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &__subtitle {
@@ -38,9 +57,38 @@
     font-size: 28px;
     line-height: 34px;
     color: var(--light-color);
+
+    @media (max-width: 479.98px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__image {
     width: 40%;
+
+    @media (max-width: 1199.98px) {
+      width: 100%;
+      margin-right: auto;
+      background-image: url(../images/arms.png);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 479.98px) {
+      background-size: 215px 230px;
+    }
+
+    a {
+      img {
+        @media (max-width: 1199.98px) {
+          margin-left: 0;
+        }
+
+        @media (max-width: 479.98px) {
+          max-width: 190px;
+        }
+      }
+    }
   }
 }

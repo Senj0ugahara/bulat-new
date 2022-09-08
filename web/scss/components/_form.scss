@@ -7,6 +7,10 @@
   border-radius: 20px;
   background: var(--light-color);
 
+  @media (max-width: 479.98px) {
+    max-width: 300px;
+  }
+
   &__offer {
     margin-bottom: 35px;
     font-weight: 700;
@@ -15,6 +19,11 @@
     background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 479.98px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__prices {
@@ -30,6 +39,11 @@
       font-size: 23px;
       line-height: 28px;
       color: #636363;
+
+      @media (max-width: 479.98px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     &_new {
@@ -38,6 +52,11 @@
       -webkit-text-fill-color: transparent;
       font-size: 28px;
       line-height: 34px;
+
+      @media (max-width: 479.98px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
   }
 }
@@ -49,6 +68,10 @@
   &__btn {
     width: 360px;
     margin: 0 auto;
+
+    @media (max-width: 479.98px) {
+      width: 100%;
+    }
   }
 }
 
@@ -66,6 +89,10 @@
   font-size: 18px;
   line-height: 22px;
   color: #2B2B2B;
+
+  @media (max-width: 479.98px) {
+    max-width: 230px;
+  }
 }
 
 .custom-select {
@@ -79,6 +106,10 @@
   border-radius: 12px;
   background-color: var(--light-color);
   border: 2px solid #448FFF;
+
+  @media (max-width: 479.98px) {
+    max-width: 230px;
+  }
 }
 
 .selectBox {
@@ -104,6 +135,10 @@
     background-image: url(../images/form-arrow.svg);
     background-repeat: no-repeat;
     z-index: 10;
+
+    @media (max-width: 479.98px) {
+      right: 14px;
+    }
   }
 }
 
@@ -148,6 +183,10 @@ form input[type=text] {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.4);
   outline: 0;
+
+  @media (max-width: 479.98px) {
+    max-width: 230px;
+  }
 }
 
 .dop-container {
@@ -172,6 +211,10 @@ form input[type=text] {
   &__input {
     position: absolute;
     top: 0;
+
+    @media (max-width: 479.98px) {
+      display: none;
+    }
   }
 
   &__check {
@@ -193,6 +236,14 @@ form input[type=text] {
       border: 2px solid #448FFF;
       background-color: #fff;
       border-radius: 8px;
+
+      @media (max-width: 479.98px) {
+        top: 10px;
+        left: 30px;
+        width: 18px;
+        height: 18px;
+        border-radius: 5px;
+      }
     }
   }
 }

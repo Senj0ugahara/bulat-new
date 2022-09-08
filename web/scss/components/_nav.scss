@@ -1,11 +1,44 @@
 .nav {
+  @media (max-width: 1199.98px) {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    padding: 30px;
+    background: linear-gradient(180.07deg, #F0F5FF 0.06%, #D9E2FF 99.94%);
+    transform: translateX(-150%);
+    transition: transform .3s ease;
+    z-index: 20;
+  }
+
+  &--active {
+    transform: none;
+  }
+
   &__list {
     display: flex;
+
+    @media (max-width: 1199.98px) {
+      margin-bottom: 50px;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 50px;
+
+      @media (max-width: 1549.98px) {
+        margin-right: 30px;
+      }
+
+      @media (max-width: 1199.98px) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -14,5 +47,11 @@
     font-size: 22px;
     line-height: 26px;
     color: var(--light-color);
+
+    @media (max-width: 1199.98px) {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

@@ -10,6 +10,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+    }
   }
 
   &__btn {
@@ -18,17 +22,33 @@
     margin: 0 auto 40px;
     font-size: 28px;
     line-height: 33px;
+
+    @media (max-width: 479.98px) {
+      width: 220px;
+      height: 46px;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 12px 0;
+    }
   }
 
   &__logos {
     display: flex;
     justify-content: center;
 
+    @media (max-width: 479.98px) {
+      justify-content: space-between;
+    }
+
     img {
       margin: 0;
 
       &:not(:last-child) {
         margin-right: 33px;
+
+        @media (max-width: 479.98px) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -42,12 +62,35 @@
   box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
   border-radius: 20px;
 
+  @media (max-width: 991.98px) {
+    max-width: none;
+    margin: 0 auto 30px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+  }
+
+  @media (max-width: 479.98px) {
+    max-width: 260px;
+  }
+
   &:not(:last-child) {
     margin-right: 40px;
   }
 
   &__icon {
     margin-bottom: 18px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    @media (max-width: 479.98px) {
+      width: 44px;
+      height: 44px;
+    }
   }
 
   &__name {
@@ -58,6 +101,15 @@
     font-size: 28px;
     line-height: 33px;
     text-align: center;
+
+    @media (max-width: 991.98px) {
+      text-align: left;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &__desc {
@@ -65,5 +117,14 @@
     line-height: 26px;
     text-align: center;
     color: #2B2B2B;
+
+    @media (max-width: 991.98px) {
+      text-align: left;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }

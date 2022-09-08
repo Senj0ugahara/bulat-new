@@ -20,7 +20,10 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" href="/">
-          <img src="images/logo.svg" alt="logo">
+          <picture>
+            <source srcset="images/logo-mobile.svg" media="(max-width: 1439.98px)">
+            <img src="images/logo.svg" alt="logo">
+          </picture>
           <span class="logo__title">Официальный сайт производителя</span>
         </a>
         <nav class="nav header__nav">
@@ -38,6 +41,10 @@
               <a class="nav__link" href="">Доставка</a>
             </li>
           </ul>
+          <div class="header__phone header__phone-mobile">
+            <a class="header-phone__link" href="tel:+78002505932">8 800 250 59 32</a>
+            <span class="header-phone__title">Звонок по России бесплатный</span>
+          </div>
         </nav>
         <div class="header__right">
           <button class="btn-reset header__btn" data-fancybox data-src="#callme">Заказать звонок</button>
@@ -46,6 +53,10 @@
             <span class="header-phone__title">Звонок по России бесплатный</span>
           </div>
         </div>
+        <button class="btn-reset header__btn-mobile" data-fancybox data-src="#callme">Звонок<br> бесплатный</button>
+        <button class="btn-reset header__burger">
+          <span class="header__burger-line"></span>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -144,7 +155,7 @@
                 <h4 class="applications-item__title">Для автомобилистов</h4>
                 <p class="applications-item__desc">С помощью пескоструя «Булат»<br> вы легко:</p>
                 <ul>
-                  <li>Очистите от ржавчины диски<br> и другие детали автомобиля</li>
+                  <li>Очистите от ржавчины диски и другие детали автомобиля</li>
                   <li>Избавитесь от “рыжиков”</li>
                   <li>Снимите старый слой краски</li>
                 </ul>
@@ -158,8 +169,8 @@
                 <h4 class="applications-item__title">Для мотоциклистов</h4>
                 <p class="applications-item__desc">«Булат» гарантирует:</p>
                 <ul>
-                  <li>Деликатную работу с<br> любыми, даже мелкими<br> деталями</li>
-                  <li>Никаких повреждений и<br> вмятин на запчастях и<br> корпусе</li>
+                  <li>Деликатную работу с любыми, даже мелкими деталями</li>
+                  <li>Никаких повреждений и вмятин на запчастях и корпусе</li>
                 </ul>
               </div>
             </li>
@@ -169,7 +180,7 @@
               </div>
               <div class="applications-item__info">
                 <h4 class="applications-item__title">Для декоративных работ</h4>
-                <p class="applications-item__desc">«Булат» позволяет<br> обрабатывать:</p>
+                <p class="applications-item__desc">«Булат» позволяет обрабатывать:</p>
                 <ul>
                   <li>Древесину</li>
                   <li>Стекло</li>
@@ -464,6 +475,97 @@
               </div>
             </li>
           </ul>
+          <div class="swiper set__swiper set-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">1/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-img1.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Загрузочный бункер</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">2/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-img2.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Осушитель воздуха AFR-2000</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">3/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-img3.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Пистолет</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">4/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-list-img1.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Шланги</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">5/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-list-img2.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Комплект колес</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">6/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-list-img3.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Керамическое сопло</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">7/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-list-img4.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Комплект фурнитуры</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">8/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-list-img5.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Гарантийный талон</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="set-swiper__item">
+                  <span class="set-swiper__number">9/9</span>
+                  <div class="set-swiper__image">
+                    <img src="images/set/set-list-img6.png" alt="image">
+                  </div>
+                  <h3 class="set-item__title set-swiper__title">Паспорт и инструкция</h3>
+                </div>
+              </div>
+            </div>
+            <div class="set-swiper__button set-swiper__button-prev">
+              <img src="images/swiper-arrow-prev.png" alt="icon">
+            </div>
+            <div class="set-swiper__button set-swiper__button-next">
+              <img src="images/swiper-arrow-next.png" alt="icon">
+            </div>
+          </div>
           <button class="btn-reset btn set__btn">Заказать комплект</button>
           <p class="set__subbutton centered">
             Оставьте заявку и получите<br>
@@ -495,6 +597,81 @@
               <a class="fancybox-gallery" data-fancybox="gallery" href="images/gallery/gallery-img5.jpg">
                 <img src="images/gallery/gallery-img5.png" alt="image">
               </a>
+            </div>
+          </div>
+
+          <div class="swiper gallery__swiper gallery-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="gallery-swiper__item" data-fancybox="gallery-2" href="images/gallery/gallery-img1.jpg">
+                  <img src="images/gallery/gallery-img1.png" alt="image">
+                </a>
+                <div class="gallery-swiper__navigation">
+                  <div class="gallery-swiper__button gallery-swiper__button-prev">
+                    <img src="images/swiper-arrow-prev.png" alt="image">
+                  </div>
+                  <span class="gallery-swiper__number">1/5</span>
+                  <div class="gallery-swiper__button gallery-swiper__button-next">
+                    <img src="images/swiper-arrow-next.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a class="gallery-swiper__item" data-fancybox="gallery-2" href="images/gallery/gallery-img2.jpg">
+                  <img src="images/gallery/gallery-img2.png" alt="image">
+                </a>
+                <div class="gallery-swiper__navigation">
+                  <div class="gallery-swiper__button gallery-swiper__button-prev">
+                    <img src="images/swiper-arrow-prev.png" alt="image">
+                  </div>
+                  <span class="gallery-swiper__number">2/5</span>
+                  <div class="gallery-swiper__button gallery-swiper__button-next">
+                    <img src="images/swiper-arrow-next.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a class="gallery-swiper__item" data-fancybox="gallery-2" href="images/gallery/gallery-img3.jpg">
+                  <img src="images/gallery/gallery-img3.png" alt="image">
+                </a>
+                <div class="gallery-swiper__navigation">
+                  <div class="gallery-swiper__button gallery-swiper__button-prev">
+                    <img src="images/swiper-arrow-prev.png" alt="image">
+                  </div>
+                  <span class="gallery-swiper__number">3/5</span>
+                  <div class="gallery-swiper__button gallery-swiper__button-next">
+                    <img src="images/swiper-arrow-next.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a class="gallery-swiper__item" data-fancybox="gallery-2" href="images/gallery/gallery-img4.jpg">
+                  <img src="images/gallery/gallery-img4.png" alt="image">
+                </a>
+                <div class="gallery-swiper__navigation">
+                  <div class="gallery-swiper__button gallery-swiper__button-prev">
+                    <img src="images/swiper-arrow-prev.png" alt="image">
+                  </div>
+                  <span class="gallery-swiper__number">4/5</span>
+                  <div class="gallery-swiper__button gallery-swiper__button-next">
+                    <img src="images/swiper-arrow-next.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a class="gallery-swiper__item" data-fancybox="gallery-2" href="images/gallery/gallery-img5.jpg">
+                  <img src="images/gallery/gallery-img5.png" alt="image">
+                </a>
+                <div class="gallery-swiper__navigation">
+                  <div class="gallery-swiper__button gallery-swiper__button-prev">
+                    <img src="images/swiper-arrow-prev.png" alt="image">
+                  </div>
+                  <span class="gallery-swiper__number">5/5</span>
+                  <div class="gallery-swiper__button gallery-swiper__button-next">
+                    <img src="images/swiper-arrow-next.png" alt="image">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -598,6 +775,110 @@
               </div>
             </div>
           </div>
+
+          <div class="goods__item goods-item goods-item_mobile">
+            <div class="goods-item__inner">
+              <div class="goods-item__image">
+                <img src="images/goods/goods-img1.png" alt="image">
+              </div>
+              <div class="goods-item__text">
+                <h4 class="goods-item__name">“Булат” 27 литров</h4>
+                <p class="goods-item__desc">
+                  Экономичный аппарат для домашних увлечений и маленьких мастерских
+                </p>
+                <ul class="list-reset">
+                  <li><span>Сопло:</span> 2мм</li>
+                  <li><span>Расход абразива:</span> 30-40 кг/ч</li>
+                  <li><span>Вес:</span> 12,5 кг</li>
+                </ul>
+              </div>
+            </div>
+            <div class="buy__prices goods-item__prices">
+              <span class="buy__price buy__price_new goods-item__price_new">11750 руб.</span>
+              <span class="buy__price buy__price_old goods-item__price_old"><del>17490 руб.</del></span>
+            </div>
+            <button class="btn-reset btn goods__btn">Заказать</button>
+          </div>
+
+          <div class="goods__item goods-item goods-item_mobile">
+            <div class="goods-item__inner">
+              <div class="goods-item__image">
+                <img src="images/goods/goods-img2.png" alt="image">
+              </div>
+              <div class="goods-item__text">
+                <h4 class="goods-item__name">“Булат” 35 литров</h4>
+                <p class="goods-item__desc">
+                  Компактный, но вместительный пескоструй для ухода за личным транспортом
+                </p>
+                <ul class="list-reset">
+                  <li><span>Сопло:</span> 2мм</li>
+                  <li><span>Расход абразива:</span> 45 кг/ч</li>
+                  <li><span>Вес:</span> 14 кг</li>
+                </ul>
+              </div>
+            </div>
+            <div class="buy__prices goods-item__prices">
+              <span class="buy__price buy__price_new goods-item__price_new">12750 руб.</span>
+              <span class="buy__price buy__price_old goods-item__price_old"><del>20500 руб.</del></span>
+            </div>
+            <button class="btn-reset btn goods__btn">Заказать</button>
+          </div>
+
+          <div class="goods__inner goods__inner_mobile">
+            <div class="goods__info">
+              <h3 class="goods__promotion centered">40 литров по цене 37</h3>
+              <p class="goods__subpromotion centered">до 18 июля</p>
+            </div>
+            <div class="goods__items">
+              <div class="goods__item goods-item goods-item_mobile">
+                <div class="goods-item__inner">
+                  <div class="goods-item__image">
+                    <img src="images/goods/goods-img3.png" alt="image">
+                  </div>
+                  <div class="goods-item__text">
+                    <h4 class="goods-item__name">“Булат”  37 литров</h4>
+                    <p class="goods-item__desc">
+                      Увеличенный объем аппарата для выполнения самых разных задач
+                    </p>
+                    <ul class="list-reset">
+                      <li><span>Сопло:</span> 2мм</li>
+                      <li><span>Расход абразива:</span> 45 кг/ч</li>
+                      <li><span>Вес:</span> 15,2 кг</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="buy__prices goods-item__prices">
+                  <span class="buy__price buy__price_new goods-item__price_new">13750 руб.</span>
+                  <span class="buy__price buy__price_old goods-item__price_old"><del>21200 руб.</del></span>
+                </div>
+                <button class="btn-reset btn goods__btn">Заказать</button>
+              </div>
+              <div class="goods__item goods-item goods-item_mobile">
+                <div class="goods-item__inner">
+                  <div class="goods-item__image">
+                    <img src="images/goods/goods-img4.png" alt="image">
+                  </div>
+                  <div class="goods-item__text">
+                    <h4 class="goods-item__name">“Булат”  40 литров</h4>
+                    <p class="goods-item__desc">
+                      Повышенный объем для производства, бизнеса и проведения ремонтных работ
+                    </p>
+                    <ul class="list-reset">
+                      <li><span>Сопло:</span> 2мм</li>
+                      <li><span>Расход абразива:</span> 45 кг/ч</li>
+                      <li><span>Вес:</span> 17,3 кг</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="buy__prices goods-item__prices">
+                  <span class="buy__price buy__price_new goods-item__price_new">13750 руб.</span>
+                  <span class="buy__price buy__price_old goods-item__price_old"><del>23990 руб.</del></span>
+                </div>
+                <button class="btn-reset btn goods__btn">Заказать</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
       
@@ -621,6 +902,9 @@
                   <li><span>Расход абразива:</span> 45 кг/ч</li>
                   <li><span>Вес:</span> 17,3 кг</li>
                 </ul>
+                <div class="peculiarities__image peculiarities__image_mobile">
+                  <img src="images/peculiarities/mobile-img.png" alt="image">
+                </div>
                 <button class="btn-reset btn peculiarities-item__btn">Хочу такой же!</button>
               </div>
               <div class="peculiarities-item__right">
@@ -649,6 +933,9 @@
                   <li><span>Расход абразива:</span> 45 кг/ч</li>
                   <li><span>Вес:</span> 17,3 кг</li>
                 </ul>
+                <div class="peculiarities__image peculiarities__image_mobile">
+                  <img src="images/peculiarities/mobile-img.png" alt="image">
+                </div>
                 <button class="btn-reset btn peculiarities-item__btn">Хочу такой же!</button>
               </div>
               <div class="peculiarities-item__right">
@@ -677,6 +964,9 @@
                   <li><span>Расход абразива:</span> 45 кг/ч</li>
                   <li><span>Вес:</span> 17,3 кг</li>
                 </ul>
+                <div class="peculiarities__image peculiarities__image_mobile">
+                  <img src="images/peculiarities/mobile-img.png" alt="image">
+                </div>
                 <button class="btn-reset btn peculiarities-item__btn">Хочу такой же!</button>
               </div>
               <div class="peculiarities-item__right">
@@ -731,7 +1021,10 @@
               </ul>
             </div>
             <div class="terms__image">
+              <picture>
+                <source srcset="images/terms/terms-img_mobile.png" media="(max-width: 479.98px)">
                 <img src="images/terms/terms-img.png" alt="image">
+              </picture>
             </div>
           </div>
           <button class="btn-reset btn terms__btn" data-fancybox data-src="#popupTerms">Оставить заявку на «Булат»</button>
@@ -866,7 +1159,7 @@
                   <h3 class="comparison-table__title">Самодельный</h3>
                 </td>
                 <td class="comparison-table__col comparison-table__title">
-                  <h3 class="comparison-table__title">Готовый</h3>
+                  <h3 class="comparison-table__title">Аппарат "Булат"</h3>
                 </td>
               </tr>
             </thead>
@@ -1059,40 +1352,48 @@
               <div class="delivery-item__icon">
                 <img src="images/delivery/delivery-icon1.svg" alt="icon">
               </div>
-              <h3 class="delivery-item__name">Курьерская<br> служба</h3>
-              <p class="delivery-item__desc">
-                доставит вашу посылку<br>
-                за срок от 2 до 7 дней
-              </p>
+              <div>
+                <h3 class="delivery-item__name">Курьерская служба</h3>
+                <p class="delivery-item__desc">
+                  доставит вашу посылку<br>
+                  за срок от 2 до 7 дней
+                </p>
+              </div>
             </li>
             <li class="delivery__item delivery-item">
               <div class="delivery-item__icon">
                 <img src="images/delivery/delivery-icon2.svg" alt="icon">
               </div>
-              <h3 class="delivery-item__name">Только при<br> получении</h3>
-              <p class="delivery-item__desc">
-                вы оплачиваете заказ
-              </p>
+              <div>
+                <h3 class="delivery-item__name">Только при получении</h3>
+                <p class="delivery-item__desc">
+                  вы оплачиваете заказ
+                </p>
+              </div>
             </li>
             <li class="delivery__item delivery-item">
               <div class="delivery-item__icon">
                 <img src="images/delivery/delivery-icon3.svg" alt="icon">
               </div>
-              <h3 class="delivery-item__name">Средняя<br> стоимость</h3>
-              <p class="delivery-item__desc">
-                доставки<br>
-                по РФ — 400-800 руб.
-              </p>
+              <div>
+                <h3 class="delivery-item__name">Средняя стоимость</h3>
+                <p class="delivery-item__desc">
+                  доставки<br>
+                  по РФ — 400-800 руб.
+                </p>
+              </div>
             </li>
             <li class="delivery__item delivery-item">
               <div class="delivery-item__icon">
                 <img src="images/delivery/delivery-icon4.svg" alt="icon">
               </div>
-              <h3 class="delivery-item__name">Более 700<br> отправок</h3>
-              <p class="delivery-item__desc">
-                мы осуществляем<br>
-                за месяц
-              </p>
+              <div>
+                <h3 class="delivery-item__name">Более 700 отправок</h3>
+                <p class="delivery-item__desc">
+                  мы осуществляем<br>
+                  за месяц
+                </p>
+              </div>
             </li>
           </ul>
           <button class="btn-reset btn delivery__btn" data-fancybox data-src="#popupConsultation">Узнать стоимость доставки</button>
@@ -1125,24 +1426,26 @@
       </section>
 
       <section class="map" id="map">
-        <div class="container map__container">
-            <p class="map__title">Купить пескоструй еще удобнее в наших<br> розничных <span>магазинах «Градус Хаус»</span></p>
+        <div class="container">
+          <div class="map__content">
+            <p class="map__title">Купить пескоструй еще удобнее в наших розничных <span>магазинах «Градус Хаус»</span></p>
             <p class="map__text">В наших магазинах вы сможете:</p>
             <div class="row row-cols-1 row-cols-sm-2">
                 <div class="col">
                     <ul class="list-reset list_blue">
-                        <li>купить товары для консервирования,<br> самогоноварения, копчения</li>
-                        <li>оформить заявку на самовывоз и забрать<br> товар, купленный в интернет-магазине</li>
+                      <li>купить товары для консервирования, самогоноварения, копчения</li>
+                      <li>оформить заявку на самовывоз и забрать товар, купленный в интернет-магазине</li>
                     </ul>
                 </div>
                 <div class="col">
                     <ul class="list-reset list_blue">
-                        <li>оформить скидочную карту</li>
-                        <li>сдать товар по гарантии, оформить<br> возврат или обмен без бюрократии</li>
-                        <li>получить консультацию специалиста</li>
+                      <li>оформить скидочную карту</li>
+                      <li>сдать товар по гарантии, оформить возврат или обмен без бюрократии</li>
+                      <li>получить консультацию специалиста</li>
                     </ul>
                 </div>
             </div>
+          </div>
         </div>
     
         <div class="map__wrapper">

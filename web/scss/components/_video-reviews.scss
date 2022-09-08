@@ -10,16 +10,32 @@
     position: relative;
     width: 1290px;
     margin: 0 auto;
+
+    @media (max-width: 1439.98px) {
+      width: 100%;
+    }
   }
 
   &__swiper {
     width: 1050px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1199.98px) {
+      width: 510px;
+    }
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
   }
 
   &__slide {
     width: 510px!important;
+
+    @media (max-width: 767.98px) {
+      width: 100%!important;
+    }
   }
 
   &__item {
@@ -34,6 +50,10 @@
 
     img {
       height: 323px;
+
+      @media (max-width: 767.98px) {
+        height: auto;
+      }
     }
   }
 
@@ -43,12 +63,22 @@
     font-size: 24px;
     line-height: 29px;
     color: #2B2B2B;
+
+    @media (max-width: 479.98px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &__desc {
     font-size: 22px;
     line-height: 26px;
     color: #2B2B2B;
+
+    @media (max-width: 479.98px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   &__button {
@@ -56,14 +86,32 @@
     top: 30%;
     width: 75px;
     height: 75px;
+    transform: translateY(-30%);
     cursor: pointer;
+    z-index: 10;
 
     &-prev {
       left: 0;
+
+      @media (max-width: 1439.98px) {
+        left: -50px;
+      }
+
+      @media (max-width: 767.98px) {
+        left: 0;
+      }
     }
 
     &-next {
       right: 0;
+
+      @media (max-width: 1439.98px) {
+        right: -50px;
+      }
+
+      @media (max-width: 767.98px) {
+        right: 0;
+      }
     }
   }
 }

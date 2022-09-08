@@ -16,6 +16,10 @@
 
   &__right {
     display: flex;
+    
+    @media (max-width: 1199.98px) {
+      display: none;
+    }
   }
 
   &__btn {
@@ -41,6 +45,73 @@
       background-image: url(../images/phone-icon.svg);
       background-repeat: no-repeat;
     }
+
+    &-mobile {
+      display: none;
+      padding-left: 40px;
+      font-weight: 400;
+      font-size: 10px;
+      color: var(--light-color);
+      text-align: left;
+      background-image: url(../images/phone-icon-mobile.svg);
+      background-position: left center;
+      background-repeat: no-repeat;
+
+      @media (max-width: 1199.98px) {
+        display: block;
+      }
+    }
+  }
+
+  &__phone {
+    &-mobile {
+      display: none;
+  
+      @media (max-width: 1199.98px) {
+        display: flex;
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    display: none;
+    justify-content: end;
+    align-items: center;
+    width: 22px;
+    height: 16px;
+
+    &-line {
+      display: inline-block;
+      width: 22px;
+      height: 2px;
+      background: var(--light-color);
+      border-radius: 10px;
+      transition: all .3s ease;
+
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 22px;
+        height: 2px;
+        background: var(--light-color);
+        border-radius: 10px;
+        transition: all .3s ease;
+      }
+
+      &::before {
+        bottom: 0;
+      }
+
+      &::after {
+        top: 0;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      display: flex;
+    }
   }
 }
 
@@ -50,6 +121,10 @@
 
   img {
     margin-right: 30px;
+
+    @media (max-width: 1439.98px) {
+      margin-right: 0;
+    }
   }
   
   &__title {
@@ -57,6 +132,10 @@
     font-size: 14px;
     line-height: 17px;
     color: var(--light-color);
+
+    @media (max-width: 1439.98px) {
+      display: none;
+    }
   }
 }
 
@@ -65,16 +144,32 @@
   flex-direction: column;
   text-align: right;
 
+  @media (max-width: 1199.98px) {
+    text-align: center;
+  }
+
   &__link {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     color: var(--light-color);
+
+    @media (max-width: 1199.98px) {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__title {
     font-size: 14px;
     line-height: 17px;
     color: var(--light-color);
+
+    @media (max-width: 1199.98px) {
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

@@ -12,6 +12,10 @@
     height: 407px;
     background-image: url(../images/compressor-bg.png);
     background-repeat: no-repeat;
+
+    @media (max-width: 1669.98px) {
+      display: none;
+    }
   }
 
   &__content {
@@ -22,6 +26,19 @@
     padding: 30px 70px 30px 30px;
     background: linear-gradient(180deg, #595A5C 0%, #07101F 100%);
     border-radius: 20px;
+
+    @media (max-width: 1549.98px) {
+      width: 100%;
+    }
+
+    @media (max-width: 1199.98px) {
+      padding: 30px;
+      flex-direction: column;
+    }
+
+    @media (max-width: 479.98px) {
+      padding: 6px 9px;
+    }
   }
 
   &__left {
@@ -32,12 +49,25 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @media (max-width: 1199.98px) {
+      width: 100%;
+      order: 2;
+    }
   }
 
   &__right {
     width: 49%;
 
     img {
+      width: 100%;
+
+      @media (max-width: 1199.98px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
       width: 100%;
     }
   }
@@ -50,6 +80,10 @@
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.14);
     backdrop-filter: blur(20px);
     border-radius: 17px;
+
+    @media (max-width: 479.98px) {
+      padding: 12px 8px;
+    }
   }
 
   &__title {
@@ -58,6 +92,15 @@
     font-size: 24px;
     line-height: 29px;
     color: var(--light-color);
+
+    @media (max-width: 767.98px) {
+      text-align: center;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 19px;
+      line-height: 23px;
+    }
   }
 
   &__text {
@@ -68,6 +111,17 @@
     font-weight: 700;
     font-size: 44px;
     line-height: 53px;
+
+    @media (max-width: 767.98px) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -79,6 +133,15 @@
     padding-left: 22px;
     font-size: 22px;
     color: var(--light-color);
+
+    @media (max-width: 767.98px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
 
     &::before {
       content: '';
