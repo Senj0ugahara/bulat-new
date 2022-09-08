@@ -186,6 +186,10 @@
   box-shadow: 0px 0px 200px rgba(0, 10, 103, 0.48);
   border-radius: 12px;
 
+  @media (max-width: 479.98px) {
+    padding: 26px 46px;
+  }
+
   .form-container {
     max-width: none;
     background: transparent;
@@ -206,6 +210,13 @@
     line-height: 39px;
     color: #2B2B2B;
 
+    @media (max-width: 479.98px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
+
     .blue {
       background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
       -webkit-background-clip: text;
@@ -213,6 +224,11 @@
       font-weight: 700;
       font-size: 48px;
       line-height: 58px;
+
+      @media (max-width: 479.98px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -221,15 +237,42 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
   }
 
   .popup__field {
     width: 335px;
 
+    @media (max-width: 479.98px) {
+      width: 100%;
+    }
+
+    div {
+      @media (max-width: 479.98px) {
+        width: 100%;
+      }
+    }
+
     input[type=text] {
       max-width: none;
       height: 50px;
       margin-bottom: 30px;
+
+      @media (max-width: 479.98px) {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    input[name=phone] {
+      margin-bottom: 0;
     }
 
     textarea {
@@ -248,11 +291,22 @@
       color: rgba(0, 0, 0, 0.46);
       outline: 0;
       resize: none;
+
+      @media (max-width: 479.98px) {
+        height: 60px;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 9px 0 0 16px;
+      }
     }
   }
   
   ul {
     margin-bottom: 30px;
+
+    @media (max-width: 479.98px) {
+      padding-left: 0;
+    }
 
     li {
       font-style: italic;
@@ -264,16 +318,37 @@
       &:not(:last-child) {
         margin-bottom: 10px;
       }
+
+      @media (max-width: 479.98px) {
+        font-size: 10px;
+        line-height: 12px;
+      }
     }
   }
 
   .popup__inner {
     display: flex;
+
+    @media (max-width: 479.98px) {
+      flex-direction: column;
+    }
   }
 
   .popup__btn {
     width: 188px;
     margin: 0 30px 0 0;
+
+    @media (max-width: 479.98px) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  .popup__info {
+    @media (max-width: 479.98px) {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+    }
   }
 }
 
@@ -329,9 +404,20 @@
   box-shadow: 0px 0px 200px rgba(0, 10, 103, 0.48);
   border-radius: 12px;
 
+  @media (max-width: 1199.98px) {
+    max-width: none;
+    width: auto;
+  }
+
   .carousel__button.is-close {
     top: 10px;
     right: 10px;
+  }
+
+  .img-container {
+    @media (max-width: 1199.98px) {
+      display: none;
+    }
   }
 
   .columns {
@@ -347,6 +433,21 @@
     span {
       font-size: 48px;
       line-height: 58px;
+    }
+
+    &_mobile {
+      display: none;
+
+      @media (max-width: 1199.98px) {
+        display: block;
+        text-align: center;
+      }
+
+      @media (max-width: 479.98px) {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -394,18 +495,42 @@
   .popup__field {
     input[type=text] {
       height: 50px;
+
+      @media (max-width: 479.98px) {
+        max-width: none;
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
 
     .custom-select {
       height: 50px;
       margin-bottom: 40px;
+
+      @media (max-width: 479.98px) {
+        max-width: none;
+        width: 100%;
+        height: 30px;
+      }
     }
 
     .selectBox {
       padding: 12px 28px;
 
+      @media (max-width: 479.98px) {
+        padding: 4px 28px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
       &::after {
         top: 16px;
+
+        @media (max-width: 479.98px) {
+          top: 8px;
+        }
       }
     }
   }
@@ -461,6 +586,23 @@
         width: 100%;
         height: 100%;
         background: transparent;
+      }
+    }
+  }
+
+  .buy__price_new {
+    &-mobile {
+      display: none;
+      margin: 0 0 10px 30px;
+      background: linear-gradient(180deg, #0560E8 0%, #448FFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+
+      @media (max-width: 1199.98px) {
+        display: block;
       }
     }
   }
