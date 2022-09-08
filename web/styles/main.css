@@ -5448,6 +5448,22 @@ form input[type=text] {
   gap: 15px;
 }
 
+.map__social .icon-social_vk {
+  background-image: url(../images/icon-vk-active.svg);
+}
+
+.map__social .icon-social_vk:hover {
+  background-image: url(../images/icon-vk-active.svg);
+}
+
+.map__social .icon-social_ok {
+  background-image: url(../images/icon-ok-active.svg);
+}
+
+.map__social .icon-social_ok:hover {
+  background-image: url(../images/icon-ok-active.svg);
+}
+
 .icon-social {
   width: 38px;
   height: 38px;

@@ -257,6 +257,24 @@
 
   &__social {
     gap: 15px;
+
+    .icon-social {
+      &_vk {
+        background-image: url(../images/icon-vk-active.svg);
+    
+        &:hover {
+          background-image: url(../images/icon-vk-active.svg);
+        }
+      }
+
+      &_ok {
+        background-image: url(../images/icon-ok-active.svg);
+    
+        &:hover {
+          background-image: url(../images/icon-ok-active.svg);
+        }
+      }
+    }
   }
 }
 
