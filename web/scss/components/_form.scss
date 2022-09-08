@@ -153,6 +153,11 @@
   margin: 0;
   padding: 0;
   border: 1px solid #b5bbc7;
+  z-index: 10;
+
+  @media (max-width: 479.98px) {
+    top: 30px;
+  }
 
   li {
     position: relative;

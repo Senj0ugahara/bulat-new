@@ -520,6 +520,15 @@
     background: linear-gradient(180.07deg, #FBFCFF 0.06%, #E7EDFF 99.94%);
     box-shadow: 6px 6px 10px rgba(1, 45, 85, 0.28);
     border-radius: 20px;
+
+    @media (max-width: 479.98px) {
+      max-width: none;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+    }
   }
 
   .popup__fields {
@@ -599,6 +608,11 @@
       line-height: 17px;
       text-align: center;
       color: #2B2B2B;
+
+      @media (max-width: 479.98px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
 
     &__input {
@@ -613,6 +627,19 @@
       border-radius: 8px;
       overflow: hidden;
 
+      img {
+        @media (max-width: 479.98px) {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+      }
+
+      @media (max-width: 479.98px) {
+        width: 50px;
+        height: 50px;
+      }
+
       &::after {
         top: 0;
         right: 0;
@@ -621,6 +648,13 @@
         width: 100%;
         height: 100%;
         background: transparent;
+      }
+    }
+
+    &__price {
+      @media (max-width: 479.98px) {
+        font-size: 10px;
+        line-height: 12px;
       }
     }
   }
