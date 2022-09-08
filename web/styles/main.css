@@ -1934,6 +1934,12 @@ form input[type=text] {
   margin-right: 20px;
 }
 
+@media (max-width: 479.98px) {
+  .hero-item__icon {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .hero-item__icon img {
     width: 30px;
