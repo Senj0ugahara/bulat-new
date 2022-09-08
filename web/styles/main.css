@@ -1242,7 +1242,7 @@ form input[type=text] {
 @media (max-width: 1199.98px) {
   #order-modal {
     max-width: none;
-    width: auto;
+    width: inherit;
   }
 }
 
