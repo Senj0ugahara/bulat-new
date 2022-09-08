@@ -137,6 +137,10 @@
   box-shadow: 0px 0px 200px rgba(0, 10, 103, 0.48);
   border-radius: 12px;
 
+  @media (max-width: 479.98px) {
+    padding: 40px 20px;
+  }
+
   .form-container {
     max-width: none;
     background: transparent;
@@ -149,6 +153,18 @@
   .popup__title {
     font-size: 48px;
     line-height: 58px;
+
+    @media (max-width: 479.98px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .popup__subtitle {
+    @media (max-width: 479.98px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   .popup__fields {
@@ -158,17 +174,32 @@
   .popup__field {
     input[type=text] {
       height: 50px;
+
+      @media (max-width: 479.98px) {
+        max-width: none;
+        width: 100%;
+        height: 30px;
+      }
     }
 
     .custom-select {
       height: 50px;
+      @media (max-width: 479.98px) {
+        max-width: none;
+        width: 100%;
+        height: 30px;
+      }
     }
 
     .selectBox {
-      padding: 13px 28px;
+      padding: 3px 28px;
 
       &::after {
         top: 16px;
+
+        @media (max-width: 479.98px) {
+          top: 8px;
+        }
       }
     }
 

@@ -888,6 +888,12 @@ form input[type=text] {
   border-radius: 12px;
 }
 
+@media (max-width: 479.98px) {
+  #popupTerms {
+    padding: 40px 20px;
+  }
+}
+
 #popupTerms .form-container {
   max-width: none;
   background: transparent;
@@ -903,6 +909,20 @@ form input[type=text] {
   line-height: 58px;
 }
 
+@media (max-width: 479.98px) {
+  #popupTerms .popup__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  #popupTerms .popup__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
 #popupTerms .popup__fields {
   margin: 0 auto;
 }
@@ -911,16 +931,38 @@ form input[type=text] {
   height: 50px;
 }
 
+@media (max-width: 479.98px) {
+  #popupTerms .popup__field input[type=text] {
+    max-width: none;
+    width: 100%;
+    height: 30px;
+  }
+}
+
 #popupTerms .popup__field .custom-select {
   height: 50px;
 }
 
+@media (max-width: 479.98px) {
+  #popupTerms .popup__field .custom-select {
+    max-width: none;
+    width: 100%;
+    height: 30px;
+  }
+}
+
 #popupTerms .popup__field .selectBox {
-  padding: 13px 28px;
+  padding: 3px 28px;
 }
 
 #popupTerms .popup__field .selectBox::after {
   top: 16px;
+}
+
+@media (max-width: 479.98px) {
+  #popupTerms .popup__field .selectBox::after {
+    top: 8px;
+  }
 }
 
 #popupTerms .popup__field .dropDown {
