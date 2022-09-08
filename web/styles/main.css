@@ -4067,7 +4067,7 @@ form input[type=text] {
   transition: all .2s ease;
 }
 
-@media (max-width: 1439.98px) {
+@media (max-width: 1438.98px) {
   .swiper-slide .reviews__slide {
     -webkit-transform: none;
             transform: none;
@@ -4081,7 +4081,7 @@ form input[type=text] {
   transition: all .2s ease;
 }
 
-@media (max-width: 1439.98px) {
+@media (max-width: 1438.98px) {
   .swiper-slide-next .reviews__slide {
     -webkit-transform: none;
             transform: none;
