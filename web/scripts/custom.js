@@ -154,7 +154,7 @@ const swiper2 = new Swiper('.reviews__swiper', {
   },
 
   breakpoints: {
-    480: {
+    320: {
       slidesPerView: 1,
     },
 

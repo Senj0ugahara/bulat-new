@@ -3336,6 +3336,7 @@ form input[type=text] {
   .goods-item_mobile .goods-item__image {
     width: 100px;
     height: 100px;
+    margin-right: 23px;
   }
 }
 
@@ -3666,6 +3667,12 @@ form input[type=text] {
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: none;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .peculiarities-item__left {
+    padding: 0;
   }
 }
 
@@ -4103,6 +4110,7 @@ form input[type=text] {
 
 @media (max-width: 479.98px) {
   .reviews__button {
+    top: 40%;
     width: 50px;
     height: 50px;
   }

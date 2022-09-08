@@ -160,6 +160,10 @@
       box-shadow: none;
       border-radius: none;
     }
+
+    @media (max-width: 479.98px) {
+      padding: 0;
+    }
   }
 
   &__name {
