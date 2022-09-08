@@ -412,11 +412,23 @@ img {
   color: #737373;
 }
 
+@media (max-width: 479.98px) {
+  .buy__price_old {
+    font-size: 20px;
+  }
+}
+
 .buy__price_new {
   font-size: 28px;
   font-weight: 700;
   line-height: 32px;
   color: var(--light-color);
+}
+
+@media (max-width: 479.98px) {
+  .buy__price_new {
+    font-size: 26px;
+  }
 }
 
 .form-container {
