@@ -258,6 +258,28 @@
     }
 
     &-image {
+      position: relative;
+
+      &:hover {
+        &::before {
+          opacity: 1;
+          transition: all .3s ease;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 42px;
+        transform: translate(-50%, -50%);
+        background-image: url(../images/play.svg);
+        background-repeat: no-repeat;
+        opacity: .4;
+      }
+
       img {
         height: 340px;
 

@@ -4140,6 +4140,30 @@ form input[type=text] {
   }
 }
 
+.peculiarities-item__video-image {
+  position: relative;
+}
+
+.peculiarities-item__video-image:hover::before {
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.peculiarities-item__video-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 42px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../images/play.svg);
+  background-repeat: no-repeat;
+  opacity: .4;
+}
+
 .peculiarities-item__video-image img {
   height: 340px;
 }
