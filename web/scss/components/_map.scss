@@ -174,12 +174,14 @@
 
       div {
         display: flex;
-        justify-content: space-between;
         &:first-child {
           margin-bottom: 10px;
         }
 
         span {
+          display: inline-block;
+          width: 20%;
+          margin-right: 30px;
           font-size: 22px;
           line-height: 180%;
           color: #2F2F2F;

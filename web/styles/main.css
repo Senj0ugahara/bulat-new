@@ -5866,9 +5866,6 @@ form input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .map__phone-inner div:first-child {
@@ -5876,6 +5873,9 @@ form input[type=text] {
 }
 
 .map__phone-inner div span {
+  display: inline-block;
+  width: 20%;
+  margin-right: 30px;
   font-size: 22px;
   line-height: 180%;
   color: #2F2F2F;
